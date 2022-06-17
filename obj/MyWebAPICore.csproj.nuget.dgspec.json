@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Bhagyesh\\learning\\Docker\\demo_project\\dotnet-demo\\MyWebAPICore\\MyWebAPICore.csproj": {}
+  },
+  "projects": {
+    "D:\\Bhagyesh\\learning\\Docker\\demo_project\\dotnet-demo\\MyWebAPICore\\MyWebAPICore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Bhagyesh\\learning\\Docker\\demo_project\\dotnet-demo\\MyWebAPICore\\MyWebAPICore.csproj",
+        "projectName": "MyWebAPICore",
+        "projectPath": "D:\\Bhagyesh\\learning\\Docker\\demo_project\\dotnet-demo\\MyWebAPICore\\MyWebAPICore.csproj",
+        "packagesPath": "C:\\Users\\1139\\.nuget\\packages\\",
+        "outputPath": "D:\\Bhagyesh\\learning\\Docker\\demo_project\\dotnet-demo\\MyWebAPICore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\1139\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\Bhagyesh\\learning\\Docker\\demo_project\\HRMS-docker\\sosnugetpackages\\NugetPackages\\HRMSCommonService.1.0.2": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
