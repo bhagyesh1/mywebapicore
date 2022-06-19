@@ -1,14 +1,6 @@
 pipeline {
     agent any
     stages {
-        /*stage('SCM') {
-            steps {
-                // Clean before build
-                cleanWs()
-                git url: 'https://github.com/bhagyesh1/MYWEBAPICORE**.git'
-            }
-        }*/
-
         stage('DEV/BETA/MAIN Branch Building image & run') {
            when {
                 branch 'dev'
@@ -19,23 +11,21 @@ pipeline {
                 }
             }
         }
-        /*stage('build && SonarQube analysis') {
+        stage('build && SonarQube analysis') {
             environment {
             scannerHome = tool 'SonarQubeScanner'
         }
-            steps {
+            steps   {
                 script{
                      withSonarQubeEnv("sonarqube") {
-                     bat "${tool("SonarQubeScanner")}/bin/SonarScanner.MSBuild.Common.dll    \
-                        -Dsonar.projectKey=MYWEBAPICORE** \
-                        -Dsonar.sources=. \
-                        -Dsonar.css.node=. \
-                        -Dsonar.host.url=http://127.0.0.1:9000 \
-                        -Dsonar.login=sqp_da8ca3b35d42aeae75bc689b2c3ba0ded8d459d3"
+                        bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll begin /k:\"sqp_da8ca3b35d42aeae75bc689b2c3ba0ded8d459d3\""
+                        bat "dotnet build"
+                        bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll end"
+                     
                     }
                 }
             }
-        }*/
+        }
             stage('Restore packages') {
                 steps {
                     bat "dotnet restore ${workspace}\\MyWebAPICore.csproj"
