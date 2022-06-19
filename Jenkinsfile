@@ -1,13 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('SCM') {
+        /*stage('SCM') {
             steps {
                 // Clean before build
                 cleanWs()
                 git url: 'https://github.com/bhagyesh1/mywebapicore.git'
             }
-        }
+        }*/
 
         stage('DEV/BETA/MAIN Branch Building image & run') {
            when {
