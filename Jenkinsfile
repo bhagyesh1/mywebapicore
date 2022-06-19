@@ -25,9 +25,9 @@ pipeline {
         }
             steps {
                 withSonarQubeEnv('Sonarqube') {
-                    bat "${sqScannerMsBuildHome}\\SonarQube.Scanner.MSBuild.exe begin /k:sqp_da8ca3b35d42aeae75bc689b2c3ba0ded8d459d3"
+                    bat "${scannerHome}\\SonarQube.Scanner.MSBuild.exe begin /k:sqp_da8ca3b35d42aeae75bc689b2c3ba0ded8d459d3"
                     bat 'MSBuild.exe /t:Rebuild'
-                    bat "${sqScannerMsBuildHome}\\SonarQube.Scanner.MSBuild.exe end"
+                    bat "${scannerHome}\\SonarQube.Scanner.MSBuild.exe end"
                     }
                 }
         }
