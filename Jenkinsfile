@@ -17,7 +17,7 @@ pipeline {
         }
             steps   {
                 script{
-                     withSonarQubeEnv("sonarqube") {
+                     withSonarQubeEnv() {
                         bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll begin /k:\"sqp_da8ca3b35d42aeae75bc689b2c3ba0ded8d459d3\""
                         bat "dotnet build"
                         bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll end"
