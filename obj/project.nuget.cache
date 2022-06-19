@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/trwWwWuhDjU6B/aAUJNnwgBMhGs1xbXPk0dYLvYnV4X+k29+tEWm2n1iLrGA0vYzGfiVQoG0azWYek4We85+g==",
+  "dgSpecHash": "m0si6xgBLsAga2+PQoqGxUKT2evhJh3RxbjckSG7oNap5WDUWcs9vIMEx7rfPzFiXSS5q21btayuMhkWo56Z/Q==",
   "success": true,
-  "projectFilePath": "D:\\Bhagyesh\\learning\\Docker\\demo_project\\dotnet-demo\\MyWebAPICore\\MyWebAPICore.csproj",
+  "projectFilePath": "D:\\Bhagyesh\\learning\\Docker\\demo_project\\mywebapicore\\MyWebAPICore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\1139\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\1139\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

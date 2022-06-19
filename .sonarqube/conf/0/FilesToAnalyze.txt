@@ -1,0 +1,12 @@
+﻿D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\Controllers\WeatherForecastController.cs
+D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\Program.cs
+D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\WeatherForecast.cs
+D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\obj\Debug\net6.0\MyWebAPICore.GlobalUsings.g.cs
+D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\obj\Debug\net6.0\MyWebAPICore.AssemblyInfo.cs
+D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\obj\Debug\net6.0\MyWebAPICore.MvcApplicationPartsAssemblyInfo.cs
+D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\appsettings.Development.json
+D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\appsettings.json
+D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\project.zip
+D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\README.md
+D:\Bhagyesh\learning\Docker\demo_project\mywebapicore\Properties\launchSettings.json
