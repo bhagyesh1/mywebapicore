@@ -13,6 +13,7 @@ pipeline {
            when {
                 branch '*'
             }
+        }
         stage('build && SonarQube analysis') {
             environment {
             scannerHome = tool 'SonarQubeScanner'
@@ -24,6 +25,7 @@ pipeline {
                     bat "${sqScannerMsBuildHome}\\SonarQube.Scanner.MSBuild.exe end"
                     }
                 }
+        }
             stage('Restore packages') {
                 steps {
                     bat "dotnet restore ${workspace}\\mywebapicore\\MyWebAPICore.csproj"
@@ -57,9 +59,6 @@ pipeline {
                     bat "dotnet publish ${workspace}\\mywebapicore\\MyWebAPICore.csproj"
                 }
             }
-
-            }
-        }
 
     }
 }
