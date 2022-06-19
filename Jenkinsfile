@@ -18,9 +18,10 @@ pipeline {
             steps   {
                 script{
                      withSonarQubeEnv() {
-                        bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll begin /k:\"sqp_da8ca3b35d42aeae75bc689b2c3ba0ded8d459d3\""
+                        bat "dotnet tool install --global dotnet-sonarscanner"
+                        bat "dotnet sonarscanner begin /k:"MyWebAPICore" /d:sonar.host.url="http://172.16.2.35:9000"  /d:sonar.login="sqp_da8ca3b35d42aeae75bc689b2c3ba0ded8d459d3"
                         bat "dotnet build"
-                        bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll end"
+                        bat dotnet sonarscanner end /d:sonar.login="sqp_da8ca3b35d42aeae75bc689b2c3ba0ded8d459d3"
                      
                     }
                 }
