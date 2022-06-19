@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bhagyesh\\learning\\Docker\\demo_project\\dotnet-demo\\MyWebAPICore\\MyWebAPICore.csproj": {}
+    "D:\\Bhagyesh\\learning\\Docker\\demo_project\\mywebapicore\\MyWebAPICore.csproj": {}
   },
   "projects": {
-    "D:\\Bhagyesh\\learning\\Docker\\demo_project\\dotnet-demo\\MyWebAPICore\\MyWebAPICore.csproj": {
+    "D:\\Bhagyesh\\learning\\Docker\\demo_project\\mywebapicore\\MyWebAPICore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bhagyesh\\learning\\Docker\\demo_project\\dotnet-demo\\MyWebAPICore\\MyWebAPICore.csproj",
+        "projectUniqueName": "D:\\Bhagyesh\\learning\\Docker\\demo_project\\mywebapicore\\MyWebAPICore.csproj",
         "projectName": "MyWebAPICore",
-        "projectPath": "D:\\Bhagyesh\\learning\\Docker\\demo_project\\dotnet-demo\\MyWebAPICore\\MyWebAPICore.csproj",
+        "projectPath": "D:\\Bhagyesh\\learning\\Docker\\demo_project\\mywebapicore\\MyWebAPICore.csproj",
         "packagesPath": "C:\\Users\\1139\\.nuget\\packages\\",
-        "outputPath": "D:\\Bhagyesh\\learning\\Docker\\demo_project\\dotnet-demo\\MyWebAPICore\\obj\\",
+        "outputPath": "D:\\Bhagyesh\\learning\\Docker\\demo_project\\mywebapicore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
