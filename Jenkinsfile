@@ -5,7 +5,7 @@ pipeline {
             steps {
                 // Clean before build
                 cleanWs()
-                git url: 'https://github.com/bhagyesh1/mywebapicore.git'
+                git url: 'https://github.com/bhagyesh1/MYWEBAPICORE**.git'
             }
         }*/
 
@@ -19,15 +19,15 @@ pipeline {
                 }
             }
         }
-        stage('build && SonarQube analysis') {
+        /*stage('build && SonarQube analysis') {
             environment {
             scannerHome = tool 'SonarQubeScanner'
         }
             steps {
                 script{
                      withSonarQubeEnv("sonarqube") {
-                     bat "${tool("SonarQubeScanner")}/bin/sonar-scanner \
-                        -Dsonar.projectKey=MyWebAPICore \
+                     bat "${tool("SonarQubeScanner")}/bin/SonarScanner.MSBuild.Common.dll    \
+                        -Dsonar.projectKey=MYWEBAPICORE** \
                         -Dsonar.sources=. \
                         -Dsonar.css.node=. \
                         -Dsonar.host.url=http://127.0.0.1:9000 \
@@ -35,38 +35,38 @@ pipeline {
                     }
                 }
             }
-        }
+        }*/
             stage('Restore packages') {
                 steps {
-                    bat "dotnet restore ${workspace}\\mywebapicore\\MyWebAPICore.csproj"
+                    bat "dotnet restore ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj"
                 }
             }
             stage('Clean'){
                 steps{
-                    bat "dotnet clean ${workspace}\\mywebapicore\\MyWebAPICore.csproj"
+                    bat "dotnet clean ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj"
                 }
             }
             stage('Build'){
                 steps{
-                    bat "dotnet build ${workspace}\\mywebapicore\\MyWebAPICore.csproj --configuration Release"
+                    bat "dotnet build ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj --configuration Release"
                 }
             }
 
             stage('Test: Unit Test'){
                 steps {
-                    bat "dotnet test ${workspace}\\mywebapicore\\MyWebAPICore.csproj"
+                    bat "dotnet test ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj"
                 }
             }
             
             stage('Test: Integration Test'){
                 steps {
-                    bat "dotnet test ${workspace}\\mywebapicore\\MyWebAPICore.csproj"
+                    bat "dotnet test ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj"
                 }
             }
 
             stage('Publish'){
                 steps{
-                    bat "dotnet publish ${workspace}\\mywebapicore\\MyWebAPICore.csproj"
+                    bat "dotnet publish ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj"
                 }
             }
 
