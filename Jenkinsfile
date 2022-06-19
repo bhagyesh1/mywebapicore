@@ -38,35 +38,35 @@ pipeline {
         }*/
             stage('Restore packages') {
                 steps {
-                    bat "dotnet restore ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj"
+                    bat "dotnet restore ${workspace}\\MyWebAPICore.csproj"
                 }
             }
             stage('Clean'){
                 steps{
-                    bat "dotnet clean ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj"
+                    bat "dotnet clean ${workspace}\\MyWebAPICore.csproj"
                 }
             }
             stage('Build'){
                 steps{
-                    bat "dotnet build ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj --configuration Release"
+                    bat "dotnet build ${workspace}\\MyWebAPICore.csproj --configuration Release"
                 }
             }
 
             stage('Test: Unit Test'){
                 steps {
-                    bat "dotnet test ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj"
+                    bat "dotnet test ${workspace}\\MyWebAPICore.csproj"
                 }
             }
             
             stage('Test: Integration Test'){
                 steps {
-                    bat "dotnet test ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj"
+                    bat "dotnet test ${workspace}\\MyWebAPICore.csproj"
                 }
             }
 
             stage('Publish'){
                 steps{
-                    bat "dotnet publish ${workspace}\\MYWEBAPICORE**\\MyWebAPICore.csproj"
+                    bat "dotnet publish ${workspace}\\MyWebAPICore.csproj"
                 }
             }
 
