@@ -13,6 +13,11 @@ pipeline {
            when {
                 branch 'dev'
             }
+            steps{
+                script{
+                    echo "Process is starting!"
+                }
+            }
         }
         stage('build && SonarQube analysis') {
             environment {
