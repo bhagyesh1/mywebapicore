@@ -32,9 +32,9 @@ pipeline {
                         -Dsonar.css.node=. \
                         -Dsonar.host.url=http://127.0.0.1:9000 \
                         -Dsonar.login=sqp_da8ca3b35d42aeae75bc689b2c3ba0ded8d459d3"
-               }
                     }
                 }
+            }
         }
             stage('Restore packages') {
                 steps {
