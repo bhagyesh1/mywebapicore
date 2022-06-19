@@ -11,7 +11,7 @@ pipeline {
 
         stage('DEV/BETA/MAIN Branch Building image & run') {
            when {
-                branch '*'
+                branch 'dev'
             }
         }
         stage('build && SonarQube analysis') {
